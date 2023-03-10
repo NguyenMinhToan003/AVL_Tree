@@ -91,8 +91,8 @@ int getBalanceFactor(tree avl) {
 	return findHeight(avl->left) - findHeight(avl->right);
 }
 tree minValue(tree avl) {
-	tree current->left = avl;
-	while (current != NULL) {
+	tree current= avl;
+	while (current->left  != NULL) {
 		current = current->left;
 	}
 	return current;
